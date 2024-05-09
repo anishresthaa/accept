@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <!-- Made By Coder Thinking  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Norican&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS (optional, for certain features like dropdowns, modals, etc.) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Accept</title>
+</head>
+<style>
+body {
+	font-family: 'Norican', cursive;
+	background: #090d00;
+  font-weight: 400;
+	text-align: center;
+    margin: 0;
+}
+
+img{
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+}
+
+#text {
+  font-size: 25px;
+  color: white;
+  margin-top: 0px;
+}
+
+
+h1{
+  font-size: 30px;
+  color: white;
+  margin-top: 0px;
+}
+
+@keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Apply the animation to the image row */
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+  </style>
+
+
+
+
+<body>
+
+
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-4" style="padding-right: 320px;"> <!-- Move this image to the left -->
+              <section class="img"> <!-- Add fade-in class -->
+                <img src="img3.jpg" alt="" id="image1" class="fade-in" style="display: none;">
+              </section>
+            </div>
+            <div class="col-4"> <!-- Keep this image in the middle -->
+              <section class="img"> <!-- Add fade-in class -->
+                <img src="love1.png" alt=""  id="image2" class="fade-in" style="display: none;">
+                <h1>"I Love You ❤️"</h1>
+              </section>
+            </div>
+            <div class="col-4 text-right"> <!-- Move this image to the right -->
+              <section class="img"> <!-- Add fade-in class -->
+                <img src="img4.jpg" alt="" id="image3" class="fade-in" style="display: none;" width="350px">
+              </section>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+
+
+      <div class="container">
+        <p id="text"></p>
+       
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-4" style="padding-right: 320px;"> <!-- Move this image to the left -->
+                  <section class="img"> <!-- Add fade-in class -->
+                    <img src="img6.jpg" alt="" id="image4" class="fade-in" style="display: none;" width="350px">
+                  </section>
+                </div>
+                <div class="col-4"> <!-- Keep this image in the middle -->
+                  <section class="img"> <!-- Add fade-in class -->
+                    <img src="img7.jpg" alt=""  id="image5" class="fade-in" style="display: none;" width="350px">
+                  </section>
+                </div>
+                <div class="col-4 text-right"> <!-- Move this image to the right -->
+                  <section class="img"> <!-- Add fade-in class -->
+                    <img src="img8.jpg" alt="" id="image6" class="fade-in" style="display: none;" width="350px">
+                  </section>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <script>
+        setTimeout(function() {
+    document.getElementById('image1').style.display = 'flex';
+  }, 2000); // Display after 5 seconds
+  setTimeout(function() {
+    document.getElementById('image2').style.display = 'flex';
+  }, 4000); // Display after 5 seconds
+  setTimeout(function() {
+    document.getElementById('image3').style.display = 'flex';
+  }, 6000); // Display after 5 seconds
+  setTimeout(function() {
+    document.getElementById('image4').style.display = 'flex';
+  }, 2000); // Display after 5 seconds
+  setTimeout(function() {
+    document.getElementById('image5').style.display = 'flex';
+  }, 4000); // Display after 5 seconds
+  setTimeout(function() {
+    document.getElementById('image6').style.display = 'flex';
+  }, 6000); // Display after 5 seconds
+
+        
+const text = document.querySelector('#text');
+const btn = document.querySelector('#btn');
+
+const str =  '"Thank you for making me the happiest and luckiest person in the world by accepting my proposal. I can not wait to start our journey together and build a lifetime of memories. . With you, every moment feels like a treasure waiting to be discovered, every challenge a chance to grow stronger together. I cant wait to wake up every morning knowing that I have you to share my dreams, my laughter, and my love. ❤️  I  Love  You  Soo  Much  My  Love  ❤️ " ';
+let i = 0;
+
+function autoType() {
+  if (i < str.length) {
+    text.innerHTML += str.charAt(i);
+    i++;
+    setTimeout(autoType, 80);
+  } else {
+    btn.style.display = 'block';
+  }
+}
+
+autoType(); 
+
+
+
+
+      </script>
+
+      
+    
+</body>
+</html>
